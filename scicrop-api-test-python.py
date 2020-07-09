@@ -28,6 +28,4 @@ if __name__ == '__main__':
 		'Content-type': 'application/json'
 	}
 	r = requests.post('https://engine.scicrop.com/scicrop-engine-web/api/v1/jobs/post_resume', data=json.dumps(data), headers=headers)
-	print(dir(r))
 	print(r.text)
-	print(r.content)
